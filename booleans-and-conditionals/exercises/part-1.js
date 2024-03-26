@@ -1,7 +1,7 @@
 // Declare and initialize the variables for exercise 1 here:
 
 // BEFORE running the code, predict what will be printed to the console by the following statements:
-
+let engineIndicatorLight = "red blinking"
 if (engineIndicatorLight === "green") {
    console.log("engines have started");
 } else if (engineIndicatorLight === "green blinking") {
