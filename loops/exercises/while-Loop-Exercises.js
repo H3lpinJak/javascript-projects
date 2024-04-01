@@ -1,4 +1,7 @@
 //Define three variables for the LaunchCode shuttle - one for the starting fuel level, another for the number of astronauts aboard, and the third for the altitude the shuttle reaches.
+let startingFuelLevel = "";
+let astronautsAboard = "";
+let altitudeShuttleReaches = "";
 
 
 
