@@ -48,4 +48,3 @@ if (weatherStatus === "Clear") {
 }
 
 // Verify shuttle launch can proceed based on above conditions
-if 
