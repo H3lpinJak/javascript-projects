@@ -13,22 +13,16 @@ console.log(missionDuration(5))
 //console.log(`'The mission will travel ${orbitCircumference()} km around the planet, and it will take ${missionDuration(5)} hours to complete.'`)
 // Copy/paste your selectRandomEntry function here:
 function selectRandomEntry(arr) {
-  let newCrew = []
-  while (newCrew.length < 3) {
     let index = Math.floor(Math.random() * arr.length);
-    if (newCrew.includes(arr[index])) {
-
-    } else {
-      (newCrew.push(arr[index]));
-    }
-  } return newCrew;
+    return arr[index];
 }
 
 // Code your oxygenExpended function here:
 function oxygenExpended(animalObj) {
   let missionLength = missionDuration(3)
-  let oxygenUsed = (Math.round(animalObj.o2Used(missionLength)) * 1000) / 1000
-  return `${animalObj.name} will perform spacewalk, which will last ${missionLength} hours`
+  let oxygenUsed = (Math.round(animalObj.o2Used(missionLength) * 1000)) / 1000
+  console.log(oxygenUsed)
+  return `${animalObj.name} will perform spacewalk, which will last ${missionLength} hours and require ${oxygenUsed} kg of oxygen.'`
 }
 
 // Candidate data & crew array.
@@ -77,4 +71,4 @@ let candidateF = {
 
 let crew = [candidateA, candidateC, candidateE];
 //console.log(selectRandomEntry)
-console.log(oxygenExpended(selectRandomEntry))
+console.log(oxygenExpended(selectRandomEntry(crew)))
